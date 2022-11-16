@@ -1,0 +1,20 @@
+<!-- Création du dossier fragments pour mettre les fichiers footer et header -->
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <footer th:fragment="bottom">
+        <ul>
+            <li><a th:href="@{/https://twitter.com/?lang=fr}">Twitter</a></li>
+            <li><a th:href="@{/https://fr-fr.facebook.com/}">Facebook</a></li>
+            <li><a th:href="@{/https://fr.wikipedia.org/wiki/TARDIS}">TARDIS</a></li>
+        </ul>
+        <span>Copyright BBC/Terry Nation 1963</span>
+    </footer>
+</body>
+</html>
